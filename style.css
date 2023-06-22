@@ -1,0 +1,191 @@
+.image-left{
+    border: 1px dashed rgb(121, 121, 121);
+    border-radius: 10px;
+    float:right;
+    width:100px;
+    margin-left: 10px;
+    padding: 10px;
+
+}
+
+.image-rigth{
+    padding: 10px;
+    border: 1px dashed rgb(121, 121, 121);
+    border-radius: 10px;
+    float:left;
+    width:100px;
+    margin-right: 10px;
+}
+
+p{
+    text-indent: 1.5em;
+}
+
+.h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 0;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  padding: 0 20px;
+}
+.h1::before {
+    content: ' ☸ ';
+}
+
+.h1::after {
+    content: ' ☸ ';
+}
+
+.container{
+   /* margin-top: 70px; */
+   position: relative;
+   display: flex;
+   justify-content: center;
+}
+
+.container:before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+}
+
+.blockquote__container{
+    width: 60%;
+    height: auto;
+    margin:  35px auto;
+    border: 1px dotted grey;
+    border-radius: 30px;
+}
+
+blockquote{
+    font-family: 'Monserrat', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    font-style: italic;
+    position: relative;
+    text-indent: 1.5em;
+}
+
+blockquote:before {
+    content:open-quote;
+    top: 0;
+    left: 0;
+}
+
+blockquote:after {
+    content:close-quote;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+blockquote:before, blockquote:after {
+    background-color: #4592e9;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: block;
+    text-align: center;
+    /* position: relative; */
+} 
+
+h2{
+    text-align: center;
+}
+
+.truth{
+    border: 1px dotted rgb(255, 0, 200);
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+}
+.item {
+    flex-basis: 30%;
+}
+.text {
+    line-height: 30px;
+}
+
+.text::before {
+   content:"";
+   background-image: url('https://cdn-icons-png.flaticon.com/128/9841/9841584.png');
+   background-repeat: no-repeat;
+   background-size: 30px 30px;
+   background-position: center;
+   width: 50px;
+   height: 50px;
+   border: 1px dashed gray;   border-radius: 100%;
+   color: aliceblue;
+   display: block;
+   font-size: 32px;
+   line-height: 50px;
+}
+
+.text:hover:before {
+background-color: rgb(255, 217, 47);
+border: 3px dashed white;
+}
+
+ol{
+    counter-reset: list;
+}
+
+.point {
+    margin: 8px;
+counter-increment: list;
+list-style-type: none;
+}
+
+.point::before {
+    content:counter(list)".";
+    background-color: rgb(219, 199, 12);
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    margin-right: 10px;
+    padding: 1px 3px;
+}
+
+
+.paramita{
+    margin: 5px;
+    list-style-type: none;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.paramita::before {
+    content: '';
+    background-image: url('./img/Flower-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: aqua;
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 10px;
+    position: absolute;
+    top: -3px;
+    left: -30px;
+    
+}
+
+
+
+
