@@ -1,11 +1,19 @@
+*{
+    margin: 0;
+}
+
 /* заголовок */
+header{
+    background-color: rgb(240, 185, 6);
+ }
+
 .h1 {
     text-transform: uppercase;
     text-align: center;
     font-size: 50px;
     margin-top: 0;
     position: absolute;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(240, 185, 6);
     padding: 0 20px;
   }
   .h1::before {
@@ -32,9 +40,10 @@
       top: 30px;
   }
 
+
 main{
     max-width: 90%;
-    margin: auto;
+    margin: 50px auto;
 }
 
 .image-left{
@@ -72,10 +81,11 @@ p{
 
 blockquote{
     font-family: 'Monserrat', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 24px;
     font-style: italic;
     position: relative;
+    padding: 10px;
 }
 
 blockquote:before {
@@ -92,7 +102,7 @@ blockquote:after {
 }
 
 blockquote:before, blockquote:after {
-    background-color: rgb(247, 202, 223);
+    background-color: rgb(240, 185, 6);
     border-radius: 50%;
     width: 20px;
     height: 20px;
@@ -101,6 +111,73 @@ blockquote:before, blockquote:after {
     /* position: relative; */
 } 
 
+
+/* 3 колонны */
+.box{
+    /* border: 1px dashed darkslateblue; */
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 30px 0;
+}
+.item {
+    flex-basis: 30%;
+}
+.text {
+    line-height: 25px;
+    font-size: 14px;
+    
+}
+
+.text::before {
+   content:"";
+   background-image: url('/img/free-icon-buddhism-1506786.png');
+   background-repeat: no-repeat;
+   background-size: 40px 40px;
+   background-position: center;
+   width: 50px;
+   height: 50px;
+   border: 1px dashed gray;   border-radius: 100%;
+   color: aliceblue;
+   display: block;
+   font-size: 32px;
+   line-height: 50px;
+}
+
+.text:hover:before {
+background-color: rgb(240, 185, 6);
+border: 3px dashed white;
+}
+
+
+.paramita{
+    max-width: 70%;
+    margin: 30px auto;
+    list-style-type: none;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.paramita::before {
+    content: '⌘';
+    background-image: url('./img/Flower-icon.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color:rgb(240, 185, 6);
+    border-radius: 50%;
+    padding: 5px;
+    margin-right: 10px;
+    font-size: 10px;
+    position: absolute;
+    top: 0;
+    left: -25px;
+    
+}
 
 /* истины */
 h2{
@@ -126,79 +203,10 @@ h2{
     padding: 1px 3px;
 }
 
-/* 3 колонны */
-.box{
-    display: flex;
-    justify-content: space-between;
-    max-width: 90%;
-    margin: auto;
-    padding: 20px;
-}
-.item {
-    flex-basis: 30%;
-    padding: 20px;
-}
-.text {
-    line-height: 30px;
-}
-
-.text::before {
-   content:"";
-   background-image: url('/img/free-icon-buddhism-1506786.png');
-   background-repeat: no-repeat;
-   background-size: 40px 40px;
-   background-position: center;
-   width: 50px;
-   height: 50px;
-   border: 1px dashed gray;   border-radius: 100%;
-   color: aliceblue;
-   display: block;
-   font-size: 32px;
-   line-height: 50px;
-}
-
-.text:hover:before {
-background-color: rgb(247, 202, 223);
-border: 3px dashed white;
-}
-
-/* ol{
-    counter-reset: list;
-} */
-
-
-.paramita{
-    max-width: 70%;
-    margin: 30px auto;
-    list-style-type: none;
-    position: relative;
-    top: 0;
-    left: 0;
-}
-
-.paramita::before {
-    content: '⌘';
-    background-image: url('./img/Flower-icon.png');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 30px;
-    display: block;
-    width: 10px;
-    height: 10px;
-    background-color: rgb(247, 202, 223);
-    border-radius: 50%;
-    padding: 5px;
-    margin-right: 10px;
-    font-size: 10px;
-    position: absolute;
-    top: 0;
-    left: -25px;
-    
-}
-
 footer{
     height: 70px;
     font-size: 10px;
+    margin: 10px 100px;
 }
 
 
